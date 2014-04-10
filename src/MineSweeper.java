@@ -1,3 +1,7 @@
+/*Richard Kale Sipes
+*CSCD350
+*Lab1 MineSweeper
+*/
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
