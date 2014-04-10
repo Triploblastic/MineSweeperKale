@@ -43,7 +43,6 @@ public class MineField{
 		return NOT_MINE;
 	}
 	
-	/*random mine generator for test cases*/
 	public void layMines(int row, char[] fieldRow) {
 		if (row >= this.rows) {
 			throw new IllegalArgumentException("row out of bounds");
@@ -53,6 +52,7 @@ public class MineField{
 		}
 	}//layMines(int row, char[] fieldRow)
 
+	/*random mine generator for test cases*/
 	private char[][] layMines() {
 		char[][] theField = new char[this.rows][this.columns];
 		for(int n = 0; n < this.rows; n++) {
