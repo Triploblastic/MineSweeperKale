@@ -24,7 +24,9 @@ public class MineSweeper {
 		while(sc.hasNext()) {
 			int rows = sc.nextInt();
 			int cols = sc.nextInt();
-			if (rows != 0 && cols != 0) {
+			if (rows == 0 || cols == 0) {
+					break;
+			}
 				sc.nextLine();
 				int rowNum = 0;
 				MineField field = new MineField(rows, cols);	
@@ -34,9 +36,8 @@ public class MineSweeper {
 					rowNum++;
 				}
 				fields.add(field);
-			}			
+						
 		}
-		sc.close();
 		return fields;
 	}//retrieveFields()
 	
