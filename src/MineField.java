@@ -1,5 +1,7 @@
-
-
+/*Richard Kale Sipes
+ *CSCD350
+ *Lab1 MineSweeper
+ */
 public class MineField{
 	
 	private int rows;
@@ -41,6 +43,7 @@ public class MineField{
 		return NOT_MINE;
 	}
 	
+	/*random mine generator for test cases*/
 	public void layMines(int row, char[] fieldRow) {
 		if (row >= this.rows) {
 			throw new IllegalArgumentException("row out of bounds");
